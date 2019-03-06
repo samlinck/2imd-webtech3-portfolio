@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+nav ul  {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+    flex: 1 1 1fr;
+    /* order: 1; */
+    padding: 0.7em;
+    
+}
+nav ul li.logo {
+    flex: 2 1 4fr;
+    /* order: 0; */
+    order: 2;
+    align-self: center;
+    
+ 
+}
+
+nav ul li.typography{
+    order: 0;
+}
+
+nav ul li.ui{
+    order: 1;
+}
+
+nav ul li.branding{
+    order: 3;
+}
+
+nav ul li.graffiti{
+    order: 4;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2em;
+}
+ section div {
+     padding: 0.7em;
+     flex: 1 2 1fr;
+ }
