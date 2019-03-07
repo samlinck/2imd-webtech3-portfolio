@@ -4,6 +4,7 @@
 img{
     max-width: 100%;
 }
+
 nav ul  {
     list-style: none;
     display: flex;
@@ -12,17 +13,25 @@ nav ul  {
 }
 nav ul li {
     flex: 1 1 1fr;
-    /* order: 1; */
     padding: 0.7em;
+    align-self: flex-end;
+    
+}
+.logo {
+    flex: 2 1 100%;
+    text-align: center;
+    order: 0;
+}
+
+@media (min-width:550px){
+nav ul li {
+    
+    align-self: flex-end;
     
 }
 nav ul li.logo {
-    flex: 2 1 4fr;
-    /* order: 0; */
+    flex: 1 1 auto;
     order: 2;
-    align-self: center;
-    
- 
 }
 
 nav ul li.typography{
@@ -41,7 +50,15 @@ nav ul li.graffiti{
     order: 4;
 }
 
-section{
+}
+
+@media (min-width: 900px) {
+    nav ul li {
+        align-self: center;
+        padding: 3em;
+    }
+}
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,5 +68,5 @@ section{
 }
  section div {
      padding: 0.7em;
-     flex: 1 2 1fr;
+     flex: 1 1 150px;
  }
