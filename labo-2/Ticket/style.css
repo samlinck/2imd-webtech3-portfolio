@@ -4,40 +4,51 @@
 .ticket {
     background: bisque;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2.5fr 1fr 0.7fr;
 }
 
 div {
-    border: 0.5px solid black;
+    text-align: center;
+    padding: 0.5em;
 }
 
 .artist {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
+    border: 0.5px solid black;
+    padding-top: 2.5em;
 }
 
 .code {
         grid-column: 4 / 5;
         grid-row: 1 / 4;
+        border: 0.5px solid black;
+        padding-top: 2.5em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
 }
 
 .date {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    border: 0.5px solid black;
 }
 
 .info {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border: 0.5px solid black;
 }
 
 .price {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    border: 0.5px solid black;
 }
 
 .extrainfo {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    border: 0.5px solid black;
 }
