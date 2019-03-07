@@ -1,5 +1,19 @@
-# 2imd-webtech3-portfolio
-## Labo's webtech
+# 2imd-webtech3-portfolio Sam Ghyselinck
 
-### [Link groepswerk lab 1](https://github.com/samlinck/2imd-webtech3-lab1)
+## Labo's webtech
+### Lab 1 GIT
+
+#### Screenshots for GIT IT
+![alt text](https://github.com/samlinck/2imd-webtech3-portfolio/blob/master/labo-1/images/proof.png "GIT IT")
+
+#### [Link groepswerk lab 1](https://github.com/samlinck/2imd-webtech3-lab1)
+
+### Lab 2 CSS Grid & flexbox
+
+#### Screenshots for Flexbox froggy & Grid Garden
+![alt text](https://github.com/samlinck/2imd-webtech3-portfolio/blob/master/labo-2/screenshots/Flexbox%20Froggy.png "Froggy")
+![alt text](https://github.com/samlinck/2imd-webtech3-portfolio/blob/master/labo-2/screenshots/Css%20Grid%20Garden.png "Garden")
+
+#### Codepen to IMDstagram & flexbox
+[IMDstagram](https://codepen.io/Samlinck/pen/gEmROO) & [Ticket](https://codepen.io/Samlinck/pen/eXvWqe)
 
