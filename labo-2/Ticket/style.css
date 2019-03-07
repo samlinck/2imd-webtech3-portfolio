@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+.ticket {
+    background: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 2.5fr 1fr 0.7fr;
+}
+
+div {
+    border: 0.5px solid black;
+}
+
+.artist {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.code {
+        grid-column: 4 / 5;
+        grid-row: 1 / 4;
+}
+
+.date {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.info {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.price {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.extrainfo {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
