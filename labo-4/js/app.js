@@ -49,13 +49,16 @@ class Giphy {
     
     isItWarm(temp) {
         console.log(temp);
+        
         if( temp > 15) {
             // console.log("warm");
-            let heath = "warm";
+            let heath = "hot";
+            document.body.style.backgroundColor = "red";
            this.findGif(heath);
         } else {
             // console.log("cold");
             let heath = "cold";
+            document.body.style.backgroundColor = "blue";
             this.findGif(heath);
         }
     }
