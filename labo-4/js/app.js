@@ -1,7 +1,7 @@
 class Weather {
     constructor(API_KEY) {
         this.API_KEY = API_KEY;
-        console.log("yesman");
+        // console.log("yesman");
         this.initialize();
     }
 
@@ -12,12 +12,12 @@ class Weather {
     getMyLocation() {
         console.log("location");
         navigator.geolocation.getCurrentPosition(position => {
-            console.log("found you");
+            // console.log("found you");
             let lat = position.coords.latitude;
             let lng = position.coords.longitude;
             this.getWeather(lat, lng);
         }, err => {
-            console.log(err);
+            // console.log(err);
         });
     }
 
@@ -42,19 +42,19 @@ class Weather {
 class Giphy {
     constructor(temp) {
         this.temp = temp;
-        console.log("Giphy");
-        console.log(temp);
+        // console.log("Giphy");
+        // console.log(temp);
         this.isItWarm(temp);
     }
     
     isItWarm(temp) {
         console.log(temp);
         if( temp > 15) {
-            console.log("warm");
+            // console.log("warm");
             let heath = "warm";
            this.findGif(heath);
         } else {
-            console.log("cold");
+            // console.log("cold");
             let heath = "cold";
             this.findGif(heath);
         }
@@ -71,16 +71,24 @@ class Giphy {
             let random = Math.floor(Math.random() * 10);
             // let gif = json.data[random].id;
             let gif = json.data[random].embed_url;
-            this.showGif(gif);
-            console.log(gif);
+            document.querySelector('.hotOrCold').innerHTML = heath;
+            this.showGif(gif);    
+            
             
         });
     }
 
     showGif(gif) {
-        let title = document.querySelector('.title');
-        title.insertAdjacentHTML('afterend', '<div id="two">two</div>');
-    };
+        // console.log("yololaatstestap");
+        console.log(gif);
+        // let t = document.querySelector('.title');
+        // console.log(t);
+        // t.insertAdjacentHTML('afterend', `<iframe src="https://giphy.com/embed/${gif}" width="480" height="452" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`);
+        // document.querySelector(".giphy-embed").src=link;
+        document.querySelector('.giphy-embed').setAttribute('src',gif);
+        
+        
+    }
 
 }
 
