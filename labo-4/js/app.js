@@ -69,11 +69,18 @@ class Giphy {
         .then(json => {
             console.log("gif here");
             let random = Math.floor(Math.random() * 10);
-            let gif = json.data[random].id;
+            // let gif = json.data[random].id;
+            let gif = json.data[random].embed_url;
+            this.showGif(gif);
             console.log(gif);
             
         });
     }
+
+    showGif(gif) {
+        let title = document.querySelector('.title');
+        title.insertAdjacentHTML('afterend', '<div id="two">two</div>');
+    };
 
 }
 
