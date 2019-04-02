@@ -1,9 +1,17 @@
 let get = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "GETTING all messages"
-    });
-}
+    if (req.query.user) {
+        let username = req.query.user;
+        res.json({
+            "status": "success",
+            "message": "GETTING message for username: " + username
+        });
+    } else {
+        res.json({
+            "status": "success",
+            "message": "GETTING all messages"
+        });
+    }
+};
 
 let post = (req, res) => {
     res.json({
@@ -24,12 +32,7 @@ let getOne = (req, res) => {
     });
 }
 
-let forUser = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "GETTING messages for user bojack"
-    });
-}
+
 
 let del = (req, res) => {
     let id = req.params.id;
@@ -48,7 +51,7 @@ let put = (req, res) => {
         "status": "success",
         "message": {
             "id": id,
-            "message": "UPDATING message with ID" + id
+            "message": "UPDATING message with ID " + id
         }
     });
 }
@@ -57,6 +60,4 @@ module.exports.get = get;
 module.exports.post = post;
 module.exports.del = del;
 module.exports.put = put;
-
 module.exports.getOne = getOne;
-module.exports.forUser = forUser;
