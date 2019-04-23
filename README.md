@@ -20,3 +20,8 @@
 ### lab 4 API'S
 
 [HOTORCOLDAPI](https://codepen.io/Samlinck/pen/pYZEBq)
+
+### lab 5 Node.js
+
+[Codepen tester](https://codepen.io/Samlinck/pen/yrxzQb)
+[link to repository lab 5](https://github.com/samlinck/labo-5)
